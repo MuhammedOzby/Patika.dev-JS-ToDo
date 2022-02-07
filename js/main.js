@@ -1,4 +1,7 @@
 let tasks = [];
+let addTaskButtons = document.getElementById("addTask");
+let task = document.getElementById("task").value;
+
 tasks = JSON.parse(
   localStorage.getItem("tasks") ? localStorage.getItem("tasks") : "[]"
 );
@@ -36,9 +39,6 @@ function listTask() {
       </p>`;
   });
 }
-
-let addTaskButtons = document.getElementById("addTask");
-let task = document.getElementById("task").value;
 
 (function () {
   listTask();
