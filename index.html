@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bulma.css">
+  <style>
+    #task {
+      border-bottom-left-radius: 0;
+    }
+
+    #addTask {
+      border-bottom-right-radius: 0;
+    }
+
+    .delete {
+      float: right;
+    }
+
+    .panel-block {
+      display: block;
+    }
+  </style>
+  <title>Basit To-Do uygulaması</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="hero is-dark is-small">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <p class="navbar-item">
+              <h1 class=" is-size-1">Muhammed M. ÖZBAY</h1>
+              </p>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="is-size-4">
+            Javascript ile To Do List.
+          </p>
+
+        </div>
+      </div>
+
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <div class="container has-text-centered">
+          <p class="is-size-3">
+            Görev Ekle:
+          </p>
+          <form action="">
+            <div class="field has-addons">
+              <p class="control is-expanded">
+                <input class="input" type="text" placeholder="Görev" id="task">
+              </p>
+              <p class="control">
+                <a class="button is-link-light has-background-primary-light" onclick="addTask();" id="addTask">
+                  Ekle
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <article class="panel is-link" style="margin-top: 15px;" id="taskList">
+
+    </article>
+    <ul>
+    </ul>
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
